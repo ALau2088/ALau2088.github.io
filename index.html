@@ -1,1 +1,149 @@
-Hello World
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles/main.css">
+
+  <title>My Website</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li>
+            <a href="#about" onclick="return false" onmousedown="autoScroll('about')">About</a>
+          </li>
+          <li>
+            <a href="#skills" onclick="return false" onmousedown="autoScroll('skills')">Skills</a>
+          </li>
+          <li>
+            <a href="#projects" onclick="return false" onmousedown="autoScroll('projects')">Projects</a>
+          </li>
+          <!--<li>
+            <a href="#blog" onclick="return false" onmousedown="autoScroll('blog')">Blog</a>
+          </li>-->
+          <li>
+            <a href="#contact" onclick="return false" onmousedown="autoScroll('contact')">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <h1 id="intro">Welcome</h1>
+  </header>
+  <div class="about-bg">
+    <div id="about">
+      <h2>About Me</h2>
+      <img src="styles/images/profile.jpg">
+      <div class="bio">
+        <p>Hi, my name is Andrew. I am a mechanical engineer and self-taught full-stack developer. Thank you for viewing my
+          portfolio.
+        </p>
+        <div class="resume">
+          <button type="button" onclick="window.open('styles/pdf/AndrewLauResume.pdf','_blank', 'height=400,width=400,top=200px,left=600px')">RESUME</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-ul">
+      <li>HTML5/CSS3</li>
+      <li>Javascript/ES5/ES6/JQuery</li>
+      <li>Git</li>
+      <li>ReactJs/Redux</li>
+      <li>NodeJs/ExpressJs</li>
+      <li>MongoDB/Mongoose</li>
+    </ul>
+  </div>
+  <div id="projects">
+    <h2>Projects</h2>
+    <div class="content">
+      <div id="restaurant">
+        <a href="skylinecafe/restaurant.html ">
+          <img src="styles/images/skylinecafe.png " height="200" width="300">
+          <div class="desc">
+            <p>sunt aut facere repellat provident occaecati excepturi optio reprehenderit</p>
+          </div>
+        </a>
+
+      </div>
+      <div id="real-estate">
+
+        <a href="bluefin/client/index.html ">
+          <img src="styles/images/redfin.png " height="200" width="300">
+          <div class="desc">
+            <p>sunt aut facere repellat provident occaecati excepturi optio reprehenderit</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--<div id="blog">
+    <h2>Movies/TV Shows Blog</h2>
+  </div>-->
+  <div class="contact-bg">
+    <div id="contact">
+      <h2>Contact</h2>
+      <div class="alert">Your message has been sent</div>
+      <!--@TODO - validation -->
+      <form id="contactForm">
+        <p class="form">
+          <label>Your Name</label>
+          <input type="text" name="name" id="name" required>
+        </p>
+        <p class="form">
+          <label>Your Email</label>
+          <input type="email" name="email" id="email" required>
+        </p>
+        <p class="full">
+          <label>Message</label>
+          <textarea name="message" rows="20" id="message">
+          </textarea>
+        </p>
+        <p class="full">
+          <button type="submit">Submit</button>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- JQuery -->
+  <script src="jquery/jquery-3.3.1.slim.min.js "></script>
+  <!--Auto Scroll-->
+  <script>
+    let scrollY = 0;
+    const distance = 40;
+    const speed = 24;
+    function autoScroll(scroll) {
+      const currentY = window.pageYOffset;
+      const targetY = document.getElementById(scroll).offsetTop;
+      //To stop autoscroll at bottom of page
+      const bodyHeight = document.body.offsetHeight;
+      const yPos = currentY + window.innerHeight;
+      const animator = setTimeout('autoScroll(\'' + scroll + '\')', speed);//setTimeout recursive function, parentheses around autoScroll and scroll because they are defined globally.
+      if (yPos > bodyHeight) {
+        clearTimeout(animator);
+      } else {
+        if (currentY < targetY - distance) {
+          scrollY = currentY + distance;
+          window.scroll(0, scrollY);
+        } else {
+          clearTimeout(animator);
+        }
+      }
+    }
+  </script>
+  <!--form submit-->
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+  <script src="main.js">
+  </script>
+</body>
+
+</html>

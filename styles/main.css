@@ -1,0 +1,305 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: url("images/Computer-2.jpg") no-repeat 0% -14%;
+  background-size: 100%;
+  top: 0px;
+}
+
+/*navigation bar*/
+.container {
+  display: block;
+  position: fixed;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background: #000000;
+}
+
+nav ul {
+  text-align: center;
+  height: 50px;
+  margin-top: 10px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 20px;
+  transition: all 1s ease-out;
+  color: #c0c0c0;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#intro {
+  display: block;
+  padding-top: 100px;
+  width: auto;
+  height: 1000px;
+  text-align: center;
+}
+
+/*about section*/
+#about {
+  display: grid;
+  width: 500px;
+  grid-template-columns: 1fr 1fr;
+  height: auto;
+  margin: auto;
+  padding: 0px 10px 10px 10px;
+}
+
+#about h2 {
+  grid-column: 1/3;
+  padding: 10px;
+  text-align: center;
+}
+
+#about .bio {
+  background-color: #c0c0c0;
+}
+
+#about resume {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+#about button {
+  display: block;
+  width: 100px;
+  margin: auto;
+  border: none;
+  background-color: #000080;
+  color: #c0c0c0;
+}
+
+/*skills section*/
+#skills {
+  display: block;
+  width: auto;
+  height: auto;
+  text-align: center;
+  padding: 10px 10px 50px 10px;
+}
+
+.skills-ul {
+  width: 200px;
+  margin: auto;
+}
+
+.skills-ul li {
+  text-align: left;
+}
+
+/*projects section*/
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+#projects {
+  display: block;
+  height: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+#projects h2 {
+  display: block;
+  text-align: center;
+}
+/*
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  height: auto;
+}
+*/
+
+.content {
+  display: flexbox;
+  width: 100%;
+  margin: auto;
+}
+
+#restaurant,
+#real-estate {
+  display: inline-block;
+  width: 300px;
+  margin: 20px;
+  padding: 5px;
+}
+
+.content .desc {
+  width: 300px;
+  height: 200px;
+  background-color: #c0c0c0;
+  padding: 0px;
+}
+
+.content a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/*blog*/
+/*
+#blog {
+  display: block;
+  height: auto;
+  text-align: center;
+}
+*/
+
+/*contact section*/
+div.contact-bg {
+  background-color: #000000;
+}
+
+#contact {
+  display: block;
+  width: 500px;
+  margin: auto;
+  height: auto;
+  text-align: center;
+  padding: 10px 10px 50px 10px;
+  background-color: #000000;
+}
+
+#contactForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+
+#contact form label {
+  display: block;
+  color: #c0c0c0;
+}
+
+#contact form .form {
+  display: block;
+}
+
+#contact form .full {
+  grid-column: 1 / 3;
+  grid-gap: 10px;
+}
+
+#contact form .form,
+#contact form .full {
+  padding: 0px;
+  margin: 0px;
+}
+
+#contact form button,
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  padding: 0px;
+}
+
+#contact form button {
+  border: none;
+  background-color: #000080;
+  color: #c0c0c0;
+}
+
+#contact form textarea {
+  padding: 0px;
+  text-indent: 0px;
+  text-align: start;
+}
+
+.alert {
+  text-align: center;
+  padding: 10px;
+  background: #79c879;
+  color: #ffffff;
+  margin-bottom: 10px;
+  display: none;
+}
+
+/*SMARTPHONE SCREENS*/
+@media only screen and (max-width: 480px) {
+  /*media query test
+  body {
+    display: none;
+  }
+  */
+  #about {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    margin: auto;
+    padding: 0px 10px 10px 10px;
+  }
+
+  body {
+    background-position: top left;
+  }
+
+  #intro {
+    display: block;
+    padding-top: 100px;
+    width: auto;
+    height: 300px;
+    text-align: center;
+  }
+
+  /*about section*/
+
+  /*projects section*/
+  #projects main {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  /*contact section*/
+
+  #contact {
+    display: block;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    text-align: center;
+  }
+
+  #contact form {
+    display: block;
+  }
+
+  #contact form .form,
+  #contact form .full {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 860px) and (min-width: 500px) {
+  #intro {
+    display: block;
+    padding-top: 100px;
+    width: auto;
+    height: 500px;
+    text-align: center;
+  }
+}

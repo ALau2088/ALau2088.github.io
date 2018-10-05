@@ -1,0 +1,26 @@
+.WhyRedfin {
+  background-color: #ffffff;
+}
+
+.WhyRedfin2 {
+  background-color: #ffffff;
+  color: #333;
+  text-align: center;
+  width: 550px;
+  margin: auto;
+  font-family: Roboto, arial, sans-serif;
+  font-weight: 200;
+}
+
+.WhyRedfin2 h2 {
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.WhyRedfin2 button {
+  padding: 10px;
+  height: 34px;
+  font-family: Libre Franklin, arial, sans-serif;
+  border-radius: 2px 2px 2px 2px;
+  border: none;
+}

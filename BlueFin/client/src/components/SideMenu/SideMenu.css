@@ -1,0 +1,17 @@
+/*Side Menu*/
+
+div.Menu a {
+  display: block;
+  color: white;
+  width: 250px;
+}
+
+a.btn-close {
+  text-align: right;
+}
+
+@media (min-width: 760px) {
+  .open-slide {
+    display: none;
+  }
+}
