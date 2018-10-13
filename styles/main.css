@@ -74,13 +74,13 @@ body {
 }
 
 /*Navigation Bar and side menu media queries*/
-@media (max-width: 481px){
+@media (max-width: 500px){
   .navbar-nav {
     display: none;
   }
 }
 
-@media (min-width: 481px){
+@media (min-width: 500px){
   .open-slide, .side-nav {
     display: none;
   }
