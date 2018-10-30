@@ -166,6 +166,10 @@ img {
   display: block;
   text-align: center;
 }
+
+#restaurant:hover, #real-estate:hover {
+  transform: scale(1.1)
+}
 /*
 main {
   display: grid;
