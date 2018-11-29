@@ -4,7 +4,7 @@
   padding: 0px;
 }
 
-h2{
+h1, h2{
   font-family: sans-serif, 'Libre-Franklin', Arial;
 }
 
@@ -100,9 +100,9 @@ body {
   text-align: center;
 }
 
-#intro h2 {
+#intro h1 {
   background-color: rgba(192,192,192,0.1);
-  width:150px;
+  width:250px;
   margin: auto;
 }
 
