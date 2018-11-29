@@ -4,6 +4,10 @@
   padding: 0px;
 }
 
+h2{
+  font-family: sans-serif, 'Libre-Franklin', Arial;
+}
+
 body {
   background: url("images/Computer-2.jpg") no-repeat 0% -14%;
   background-size: 100vw 100vh;
@@ -38,6 +42,7 @@ body {
 
 .navbar li {
   display: inline-block;
+  font-family: 'Black Han Sans', sans-serif;
 }
 
 .navbar a:hover {
@@ -95,19 +100,27 @@ body {
   text-align: center;
 }
 
+#intro h2 {
+  background-color: rgba(192,192,192,0.1);
+  width:150px;
+  margin: auto;
+}
+
 /*about section*/
 #about {
   display: grid;
   width: 500px;
   grid-template-columns: 1fr 1fr;
   height: auto;
-  margin: auto;
+  margin: 10px auto;
   padding: 0px 10px 10px 10px;
 }
 
-#about h2 {
+.about-bg h2 {
+  background-color: rgba(192,192,192,0.2);
+  width: 150px;
+  margin: auto;
   grid-column: 1/3;
-  padding: 10px;
   text-align: center;
 }
 
@@ -115,25 +128,17 @@ body {
   background-color: #c0c0c0;
 }
 
-#about resume {
-  width: 100%;
-  margin: auto;
-  text-align: center;
-}
-
-#about button {
-  display: block;
-  width: 100px;
-  margin: auto;
-  border: none;
-  background-color: #000080;
-  color: #c0c0c0;
+#about .bio p {
+  font-family: 'Arial', sans-serif;
+  padding: 5px;
 }
 
 /*skills section*/
 .skills-head {
   display: block;
-  width: auto;
+  background-color: rgba(192,192,192,0.3);
+  width: 175px;
+  margin: auto;
   height: auto;
   text-align: center;
 }
@@ -146,16 +151,33 @@ body {
   padding: 10px 10px 50px 10px;
 }
 
-#skills div {
+#skills .flex-container {
   text-decoration: none;
   flex: 1;
   width: auto; 
+  
+}
+
+#skills .flex-container div {
+  box-sizing: border-box;
+  padding: 0px;
+  width: 177px;
+  margin: auto;
+  border: 2px solid #c0c0c0;
+  border-radius: 3px;
+  box-shadow: 25px 30px #888888;
+}
+
+#skills h3 {
+  background-color: rgba(192,192,192,0.3);
+  width: 175px;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
 }
 
 .skills-ul {
-  width: 200px;
+  width: 175px;
   margin: auto;
-
 }
 
 .skills-ul li {
@@ -187,7 +209,16 @@ img {
 
 #projects h2 {
   display: block;
+  background-color: rgba(192,192,192,0.3);
+  width: 150px;
+  margin: auto;
   text-align: center;
+  
+}
+
+#projects p {
+  font-family: Arial, sans-serif;
+  padding: 5px;
 }
 
 #restaurant:hover, #real-estate:hover {
@@ -213,8 +244,7 @@ main {
 #real-estate {
   display: inline-block;
   width: 300px;
-  margin: 20px;
-  padding: 5px;
+  margin: 25px;
 }
 
 .content .desc {
@@ -227,6 +257,10 @@ main {
 .content a {
   text-decoration: none;
   color: #000000;
+}
+
+.content a:hover {
+  text-decoration: underline;
 }
 
 /*blog*/
@@ -251,6 +285,14 @@ div.contact-bg {
   text-align: center;
   padding: 10px 10px 50px 10px;
   background-color: #000000;
+}
+
+#contact h2 {
+  display: block;
+  width: 150px;
+  margin: auto;
+  text-align: center;
+  color: #c0c0c0;
 }
 
 #contactForm {
@@ -356,6 +398,10 @@ div.contact-bg {
     height: auto;
     text-align: center;
     padding: 10px 10px 50px 10px;
+  }
+
+  #skills div {
+    padding: 20px;
   }
 
   /*projects section*/
