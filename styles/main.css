@@ -4,8 +4,9 @@
   padding: 0px;
 }
 
-h1, h2{
-  font-family: sans-serif, 'Libre-Franklin', Arial;
+h1,
+h2 {
+  font-family: sans-serif, "Libre-Franklin", Arial;
 }
 
 body {
@@ -42,7 +43,7 @@ body {
 
 .navbar li {
   display: inline-block;
-  font-family: 'Black Han Sans', sans-serif;
+  font-family: "Black Han Sans", sans-serif;
 }
 
 .navbar a:hover {
@@ -56,7 +57,7 @@ body {
   opacity: 0.8;
   height: 100%;
   width: 0;
-  z-index:1; 
+  z-index: 1;
   overflow-x: hidden;
   padding-top: 60px;
 }
@@ -79,14 +80,15 @@ body {
 }
 
 /*Navigation Bar and side menu media queries*/
-@media (max-width: 500px){
+@media (max-width: 500px) {
   .navbar-nav {
     display: none;
   }
 }
 
-@media (min-width: 500px){
-  .open-slide, .side-nav {
+@media (min-width: 500px) {
+  .open-slide,
+  .side-nav {
     display: none;
   }
 }
@@ -101,8 +103,8 @@ body {
 }
 
 #intro h1 {
-  background-color: rgba(192,192,192,0.1);
-  width:250px;
+  background-color: rgba(192, 192, 192, 0.1);
+  width: 250px;
   margin: auto;
 }
 
@@ -117,7 +119,7 @@ body {
 }
 
 .about-bg h2 {
-  background-color: rgba(192,192,192,0.2);
+  background-color: rgba(192, 192, 192, 0.2);
   width: 150px;
   margin: auto;
   grid-column: 1/3;
@@ -129,14 +131,14 @@ body {
 }
 
 #about .bio p {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   padding: 5px;
 }
 
 /*skills section*/
 .skills-head {
   display: block;
-  background-color: rgba(192,192,192,0.3);
+  background-color: rgba(192, 192, 192, 0.3);
   width: 175px;
   margin: auto;
   height: auto;
@@ -154,8 +156,7 @@ body {
 #skills .flex-container {
   text-decoration: none;
   flex: 1;
-  width: auto; 
-  
+  width: auto;
 }
 
 #skills .flex-container div {
@@ -169,10 +170,10 @@ body {
 }
 
 #skills h3 {
-  background-color: rgba(192,192,192,0.3);
+  background-color: rgba(192, 192, 192, 0.3);
   width: 175px;
   margin: auto;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .skills-ul {
@@ -181,13 +182,13 @@ body {
 }
 
 .skills-ul li {
-  display:inline-block;
+  display: inline-block;
   text-align: center;
   padding: 10px;
 }
 
 .skills-ul li i {
-  display:block;
+  display: block;
   text-align: center;
   margin: auto;
   color: #c0c0c0;
@@ -209,11 +210,10 @@ img {
 
 #projects h2 {
   display: block;
-  background-color: rgba(192,192,192,0.3);
+  background-color: rgba(192, 192, 192, 0.3);
   width: 150px;
   margin: auto;
   text-align: center;
-  
 }
 
 #projects p {
@@ -221,8 +221,11 @@ img {
   padding: 5px;
 }
 
-#restaurant:hover, #real-estate:hover {
-  transform: scale(1.1)
+#restaurant:hover,
+#real-estate:hover,
+#vidjot:hover,
+#lyricfinder:hover {
+  transform: scale(1.1);
 }
 /*
 main {
@@ -235,16 +238,18 @@ main {
 */
 
 .content {
-  display: flexbox;
   width: 100%;
   margin: auto;
 }
 
 #restaurant,
-#real-estate {
+#real-estate,
+#vidjot,
+#lyricfinder {
   display: inline-block;
   width: 300px;
   margin: 25px;
+  vertical-align: text-top;
 }
 
 .content .desc {
@@ -372,7 +377,7 @@ div.contact-bg {
     margin: auto;
   }
 
-  #about  button {
+  #about button {
     margin: 5px auto;
   }
 
@@ -391,7 +396,6 @@ div.contact-bg {
 
   /*skills section*/
 
-  
   #skills {
     display: block;
     width: auto;
