@@ -1,239 +1,119 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<title>ANDREW LAU</title>
+	</head>
+	<body class="is-preload">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
-      integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Libre+Franklin|Roboto"
-      rel="stylesheet"
-    />
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/profile1.jpg" alt="" /></a>
+					<h1><strong>Andrew Lau</strong><br />
+					Software Developer<br />
+					</a></h1>
+				</div>
+			</header>
 
-    <title>My Website</title>
-  </head>
+		<!-- Main -->
+			<div id="main">
 
-  <body>
-    <header>
-      <nav class="navbar">
-        <span class="open-slide">
-          <a href="#" onClick="openSlideMenu()">
-            <svg width="30" height="30">
-              <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
-              <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
-              <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
-            </svg>
-          </a>
-        </span>
-        <ul class="navbar-nav">
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#skills">SKILLS</a></li>
-          <li><a href="#projects">PROJECTS</a></li>
-          <!--
-            <li>
-              <a href="#blog" onclick="return false" onmousedown="autoScroll('blog')">Blog</a>
-            </li>
-          -->
-          <li><a href="#contact">CONTACT</a></li>
-        </ul>
-      </nav>
-      <div id="side-menu" class="side-nav">
-        <a href="#" class="btn-close" onClick="closeSlideMenu()">&times;</a>
-        <a href="#about">About</a> <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a> <a href="#contact">Contact</a>
-      </div>
-      <div id="intro"><h1>ANDREW LAU</h1></div>
-    </header>
-    <div class="about-bg">
-      <h2>ABOUT ME</h2>
-      <div id="about">
-        <img src="styles/images/profile.jpg" />
-        <div class="bio">
-          <p>
-            Hi, my name is Andrew. I am a full-stack developer. Thank you for
-            viewing my portfolio. Feel free to leave a message below regarding
-            job opportunities.
-          </p>
-        </div>
-      </div>
-    </div>
-    <h2 class="skills-head">SKILLS</h2>
-    <div id="skills">
-      <div class="flex-container">
-        <div>
-          <h3>LANGUAGES</h3>
-          <ul class="skills-ul">
-            <li><i class="fab fa-html5 fa-5x"></i>HTML5</li>
-            <li><i class="fab fa-css3-alt fa-5x"></i>CSS3</li>
-            <li><i class="fab fa-sass fa-5x"></i>Sass</li>
-            <li><i class="fab fa-js fa-5x"></i>Javascript</li>
-          </ul>
-        </div>
-      </div>
-      <div class="flex-container">
-        <div>
-        <h3>FRONTEND DEVELOPMENT</h3>
-        <ul class="skills-ul">
-          <li><i class="fab fa-react fa-5x"></i>ReactJs/Redux</li>
-        </ul>
-      </div>
-      </div>
-      <div class="flex-container">
-        <div>
-        <h3>BACKEND DEVELOPMENT</h3>
-        <ul class="skills-ul">
-          <li><i class="fab fa-node fa-5x"></i>NodeJs/ExpressJS</li>
-        </ul>
-      </div>
-      </div>
-      <div class="flex-container">
-        <div>
-        <h3>MISCELLANEOUS TECH</h3>
-        <ul class="skills-ul">
-          <li><i class="fab fa-git fa-5x"></i>Git</li>
-        </ul>
-        </div>
-      </div>
-    </div>
-    <div id="projects">
-      <h2>PROJECTS</h2>
-      <div class="content">
-        <div id="vidjot">
-          <img src="styles/images/vidjot.PNG" height="200" width="300" />
-          <div class="desc">
-            <p>App for logging ideas built with ExpressJs and Mongoose/MongoDB. PassportJs and BCryptJs is utlized for authentication. HTML files are built with the Handlebars template engine.</p>
-            <p>
-              <a href="https://afternoon-citadel-96597.herokuapp.com/">VIEW SITE HERE!</a>
-            </p>
-            <p>
-              <a href="https://github.com/ALau2088/vidjot"
-                ><i class="fab fa-github"></i>REPOSITORY</a
-              >
-            </p>
-          </div>
-        </div>
-        <div id="lyricfinder">
-          <img src="styles/images/lyricfinder.PNG" height="200" width="300" />
-          <div class="desc">
-            <p>App for lyric search built with ReactJs. Axios is utilized to make http requests to Musixmatch API and get lyrics. React Context API manages the application state. Bootstrap and Fontawesome is utilized for styling.</p>
-            <p>
-              <a href="https://desolate-taiga-61797.herokuapp.com/">VIEW SITE HERE!</a>
-            </p>
-            <p>
-              <a href="https://github.com/ALau2088/lyricfinder"
-                ><i class="fab fa-github"></i>REPOSITORY</a
-              >
-            </p>
-          </div>
-        </div>
-        <div id="real-estate">
-          <img src="styles/images/Redfin.PNG" height="200" width="300" />
-          <div class="desc">
-            <p>Real estate website built with ReactJs.</p>
-            <p>
-              <a href="https://alau2088.github.io/bluefin/">VIEW SITE HERE!</a>
-            </p>
-            <p>
-              <a href="https://github.com/ALau2088/bluefin"
-                ><i class="fab fa-github"></i>REPOSITORY</a
-              >
-            </p>
-          </div>
-        </div>
-        <div id="restaurant">
-          <img src="styles/images/SkylineCafe.PNG" height="200" width="300" />
-          <div class="desc">
-            <p>
-              Restaurant website built with Javascript and JQuery.
-            </p>
-            <p>
-              <a href="https://alau2088.github.io/skylinecafe/"
-                >VIEW SITE HERE!</a
-              >
-            </p>
-            <p>
-              <a href="https://github.com/ALau2088/skylinecafe"
-                ><i class="fab fa-github"></i>REPOSITORY</a
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--
-      <div id="blog">
-        <h2>Movies/TV Shows Blog</h2>
-      </div>
-    -->
-    <div class="contact-bg">
-      <div id="contact">
-        <h2>CONTACT</h2>
-        <div class="alert">Your message has been sent</div>
-        <!-- @TODO - validation -->
-        <form id="contactForm">
-          <p class="form">
-            <label>Your Name</label>
-            <input type="text" name="name" id="name" required />
-          </p>
-          <p class="form">
-            <label>Your Email</label>
-            <input type="email" name="email" id="email" required />
-          </p>
-          <p class="full">
-            <label>Message</label>
-            <textarea name="message" rows="20" id="message"> </textarea>
-          </p>
-          <p class="full"><button type="submit">SUBMIT</button></p>
-        </form>
-      </div>
-    </div>
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>Hello</h2>
+						</header>
+						<p>Welcome to my project portfolio. Check it out.</p>
+						<ul class="actions">
+							<li><a href="#two" class="button">Learn More</a></li>
+							<li><a href="#three" class="button">Contact</a></li>
+						</ul>
+					</section>
 
-    <!-- JQuery -->
-    <script src="jquery/jquery-3.3.1.slim.min.js "></script>
-    <!-- Auto Scroll -->
-    <script>
-      let scrollY = 0;
-      const distance = 40;
-      const speed = 24;
-      function autoScroll(scroll) {
-        const currentY = window.pageYOffset;
-        const targetY = document.getElementById(scroll).offsetTop;
-        //To stop autoscroll at bottom of page
-        const bodyHeight = document.body.offsetHeight;
-        const yPos = currentY + window.innerHeight;
-        const animator = setTimeout("autoScroll('" + scroll + "')", speed); //setTimeout recursive function, parentheses around autoScroll and scroll because they are defined globally.
-        if (yPos > bodyHeight) {
-          clearTimeout(animator);
-        } else {
-          if (currentY < targetY - distance) {
-            scrollY = currentY + distance;
-            window.scroll(0, scrollY);
-          } else {
-            clearTimeout(animator);
-          }
-        }
-      }
-    </script>
-    <!-- form submit -->
-    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
-    <script src="main.js"></script>
-    <!-- side menu -->
-    <script>
-      function openSlideMenu() {
-        document.getElementById("side-menu").style.width = "250px";
-      }
+				<!-- Two -->
+					<section id="two">
+						<h2>Projects</h2>
+						<div class="row">
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="https://afternoon-citadel-96597.herokuapp.com/" class="image fit thumb"><img src="images/vidjot.PNG" alt="" /></a>
+								<h3>Vidjot</h3>
+								<p>App for logging ideas built with ExpressJs and Mongoose/MongoDB. PassportJs and BCryptJs is utlized for authentication. HTML files are built with the Handlebars template engine.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/lyricfinder.PNG" alt="" /></a>
+								<h3>LyricFinder</h3>
+								<p>App for lyric search built with ReactJs. Axios is utilized to make http requests to Musixmatch API and get lyrics. React Context API manages the application state. Bootstrap and Fontawesome is utilized for styling.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/Redfin.PNG" alt="" /></a>
+								<h3>Redfin</h3>
+								<p>Real estate website built with ReactJs.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/SkylineCafe.PNG" alt="" /></a>
+								<h3>Skyline Cafe</h3>
+								<p>Restaurant website built with Javascript and JQuery.</p>
+							</article>
+						</div>
+						<ul class="actions">
+							<li><a href="https://github.com/ALau2088" class="button">Repositories</a></li>
+						</ul>
+					</section>
 
-      function closeSlideMenu() {
-        document.getElementById("side-menu").style.width = "0px";
-      }
-    </script>
-  </body>
+				<!-- Three -->
+					<section id="three">
+						<h2>Get In Touch</h2>
+						<p>Leave a message for job opportunities.</p>
+
+						<!-- Alert Message -->
+						<div class="alert">Your message has been sent</div>
+
+						<div class="row">
+							<div class="col-8 col-12-small">
+								<form id="contactForm" method="post" action="#">
+									<div class="row gtr-uniform gtr-50">
+										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" required/></div>
+										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" required/></div>
+										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4" required></textarea></div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" /></li>
+									</ul>
+								</form>
+							</div>
+							<div class="col-4 col-12-small">
+								<ul class="labeled-icons">
+									<li>
+										<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
+										<a href="#">alau12004@yahoo.com</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+			
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://github.com/ALau2088" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto:alau1200$@yahoo.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<!--<script src="assets/js/jquery.poptrox.min.js"></script>-->
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+			<script src="assets/js/firebase.js"></script>
+	</body>
 </html>

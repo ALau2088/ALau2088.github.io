@@ -1,0 +1,19 @@
+{
+  "name": "alau2088.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "live-server": "live-server --port=3000 --host=localhost --browser=chrome",
+    "sass": "node-sass -w assets/sass/main.scss assets/css/main.css",
+    "dev": "concurrently \"npm run sass\" \"npm run live-server\""
+  },
+  "author": "Drew Lau",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "node-sass": "^4.11.0",
+    "sass": "^1.15.2"
+  }
+}
